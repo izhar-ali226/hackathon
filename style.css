@@ -1,0 +1,249 @@
+body{
+    font-family:sans-serif;
+    padding: 30px;
+    background:#ededed;
+    --color-primary: #009597;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252e62;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+}
+
+
+/* signin singnUp css */
+body {
+    margin: 0;
+    padding: 0;
+    --color-primary: #009597;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252e62;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .container {
+    width: 400px;
+    max-width: 400px;
+    margin: 18px;
+    padding: 32px;
+    border-radius: var(--border-radius);
+    background-color: #d8d8d8;
+  }
+  .heading {
+    text-align: center;
+    font-size: 36px;
+  }
+  .container,
+  .formInput,
+  .button {
+    font: 500 18px "Roboto", sans-serif;
+  }
+  .formHidden {
+    display: none;
+  }
+  
+  .form > :first-child {
+    margin-top: 0px;
+  }
+  .form > :last-child {
+    margin-bottom: 0px;
+  }
+  
+  .formErrorMessageSuccess {
+    color: var(--color-success);
+  }
+  .formErrorMessageError {
+    color: var(--color-error);
+  }
+  
+  .formInput {
+    /* margin-top: 12px; */
+    margin-bottom: 12px;
+  }
+  .userInput {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid white;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  
+  .userInput:focus {
+    background-color: var(--color-primary);
+    background: #ffffff;
+  }
+  .inputError {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--color-error);
+  }
+  .inputError2 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .userInputError {
+    color: var(--color-error);
+    border-color: var(--color-error);
+  }
+  
+  .button {
+    width: 100%;
+    padding: 18px 32px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    background: var(--color-primary);
+    outline: none;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: var(--color-primary-dark);
+  }
+  .button:active {
+    transform: scale(0.98);
+  }
+  .text {
+    text-align: center;
+  }
+  .formSignUp {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .formSignUp:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  /* home page page  */
+/* 
+.scoreDiv{
+    display: flex;
+    justify-content: space-between;
+
+} */
+.btnCss{
+    font-family: unset;
+    padding: 9px 30px;
+    font-size: 22px;
+    background-color: var(--color-primary);
+    border: none;
+    outline: none;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.wrapper{
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.blue {
+    color:#3f7abe;
+}
+
+h1{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #08a3d9;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #000380;
+    line-height: 38px;
+}
+
+#balloon-gallery div{
+    background: #ff3300;
+    height: 83px;
+    width: 83px;
+    text-align: center;
+    color: #ff3300;
+    font-size: 18px;
+    font-family: sans-serif, arial;
+    border-radius: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    /* float: left; */
+    margin: 2.5px 5 px 2.5px 0px;
+}
+
+#balloon-gallery div:nth-child(2n){
+    background: #ffce00;
+    color: #ffce00;
+}
+
+#balloon-gallery div:nth-child(3n-1){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+#balloon-gallery div :nth-child(4n){
+    background:#4f971f;
+    color: #ff3300;
+}
+
+
+
+#balloon-gallery .gray2 :nth-child(2n){
+    
+    background:#8e7a8e;
+    color:#a894a8;
+}
+
+#balloon-gallery .balloon2:nth-child(3n-1){
+    background: #6e550e;
+    color: #ffce00;
+}
+
+#balloon-gallery .balloon2:nth-child(4n){
+    clear:right;
+}
+ 
+/* animation for level2 */
+
+.animate{
+position: relative;
+  animation: myfirst 3s infinite ;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0%   {left: 0px; right: 0px;}
+    100% { left: 0px; right: 200px;}
+  }
+
+/* animation for level3 */
+
+.animate3{
+  position: relative;
+  animation: myfirst 2s infinite  ;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0%   {left: 0px; right: 200px;}
+    100% { left: 200px; right: 0px;}
+  }
+
+
+
+#parentBalloon {
+    display:none;
+    color:#ff3300;
+    font-size:50px;
+}
